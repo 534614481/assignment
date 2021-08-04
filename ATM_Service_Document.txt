@@ -1,0 +1,43 @@
+Atm Service Api Document
+========================
+
+Hear we have two GET Rest services which was developed by using spring Boot
+
+1)getAllAtmDetails
+
+Get Request
+===========
+
+http://localhost:8081/atm/getAllAtmDetails
+
+From above get service request Url we will get all the list of atms
+
+
+PostMan Curl
+=============
+GET /atm/getAllAtmDetails HTTP/1.1
+Host: localhost:8081
+Cache-Control: no-cache
+Postman-Token: e2724798-8d27-249c-a5df-e160f950fbac
+
+
+
+
+
+2)getAtmsByCity
+
+http://localhost:8081/atm/getAtmsByCity?city=Spijkenisse
+
+From above get service request with query param url we will have all the list of atms available for passed city.
+
+
+PostMan Curl
+=============
+
+GET /atm/getAtmsByCity?city=Spijkenisse HTTP/1.1
+Host: localhost:8081
+Cache-Control: no-cache
+Postman-Token: 38544e21-c78e-53dc-054d-482941b9665d
+
+
+Test case is also implemented for above services.
